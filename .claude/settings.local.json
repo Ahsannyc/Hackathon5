@@ -83,7 +83,9 @@
       "Bash(mkdir -p /tmp/Hackathon5-clean/production/demo)",
       "Bash(mkdir -p /tmp/Hackathon5-clean/production/tests)",
       "Bash(mkdir -p /tmp/Hackathon5-clean/history/prompts/general)",
-      "Bash(cp \"C:\\\\Users\\\\14loa\\\\Desktop\\\\IT\\\\GIAIC\\\\Q4 spec kit\\\\Hackathon5\\\\GMAIL_SETUP_DETAILED.md\" /tmp/Hackathon5-clean/)"
+      "Bash(cp \"C:\\\\Users\\\\14loa\\\\Desktop\\\\IT\\\\GIAIC\\\\Q4 spec kit\\\\Hackathon5\\\\GMAIL_SETUP_DETAILED.md\" /tmp/Hackathon5-clean/)",
+      "Bash(git commit *)",
+      "Bash(git check-ignore *)"
     ]
   }
 }
