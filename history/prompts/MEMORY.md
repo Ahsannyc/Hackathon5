@@ -1,6 +1,7 @@
 # Prompt History Index
 
 ## General Sessions
+- [033-step-by-step-guide-and-final-verification.general.prompt.md](general/033-step-by-step-guide-and-final-verification.general.prompt.md) — Step-by-step guide creation and final system verification
 - [032-final-requirements-verification.general.prompt.md](general/032-final-requirements-verification.general.prompt.md) — Final comprehensive Hackathon5.md requirements check
 - [031-security-audit-github-push.general.prompt.md](general/031-security-audit-github-push.general.prompt.md) — Security audit findings and final GitHub push
 - [030-commit-and-push-hackathon5.general.prompt.md](general/030-commit-and-push-hackathon5.general.prompt.md) — Commit and push production code, handle exposed secrets
