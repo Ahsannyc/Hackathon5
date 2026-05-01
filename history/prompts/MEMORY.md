@@ -1,6 +1,7 @@
 # Prompt History Index
 
 ## General Sessions
+- [031-security-audit-github-push.general.prompt.md](general/031-security-audit-github-push.general.prompt.md) — Security audit findings and final GitHub push
 - [030-commit-and-push-hackathon5.general.prompt.md](general/030-commit-and-push-hackathon5.general.prompt.md) — Commit and push production code, handle exposed secrets
 - [029-postgresql-database-setup.general.prompt.md](general/029-postgresql-database-setup.general.prompt.md) — PostgreSQL database setup for Hackathon5
 - [028-setup-guides-webform-gmail-whatsapp.general.prompt.md](general/028-setup-guides-webform-gmail-whatsapp.general.prompt.md) — Setup guides for channel integrations
