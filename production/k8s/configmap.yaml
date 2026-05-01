@@ -1,0 +1,93 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fte-config
+  namespace: fte-customer-success
+  labels:
+    app: cloudflow-fte
+    component: configuration
+data:
+  # Application Settings
+  ENVIRONMENT: "production"
+  DEBUG: "false"
+  LOG_LEVEL: "INFO"
+
+  # Kafka Configuration
+  KAFKA_BOOTSTRAP_SERVERS: "kafka-broker:9092"
+  KAFKA_CONSUMER_GROUP: "fte-message-processor"
+  KAFKA_NUM_PARTITIONS: "3"
+  KAFKA_REPLICATION_FACTOR: "2"
+
+  # Kafka Topics
+  KAFKA_TOPIC_INCOMING: "fte.tickets.incoming"
+  KAFKA_TOPIC_METRICS: "fte.metrics"
+  KAFKA_TOPIC_ESCALATIONS: "fte.escalations"
+  KAFKA_TOPIC_RESPONSES: "fte.responses"
+  KAFKA_TOPIC_DEAD_LETTER: "fte.dead-letter"
+
+  # Database Configuration
+  DATABASE_HOST: "postgres-service"
+  DATABASE_PORT: "5432"
+  DATABASE_NAME: "cloudflow_db"
+  DATABASE_POOL_SIZE: "20"
+  DATABASE_MAX_OVERFLOW: "40"
+  DATABASE_POOL_TIMEOUT: "30"
+  DATABASE_POOL_RECYCLE: "3600"
+
+  # FastAPI Settings
+  API_HOST: "0.0.0.0"
+  API_PORT: "8000"
+  API_WORKERS: "4"
+  API_TIMEOUT: "120"
+
+  # Cohere Model Settings
+  COHERE_MODEL: "command-r-plus"
+  COHERE_MAX_TOKENS: "4096"
+  COHERE_TEMPERATURE: "0.7"
+
+  # Gmail Settings (if Gmail polling enabled)
+  GMAIL_ENABLED: "true"
+  GMAIL_POLL_INTERVAL: "300"
+  GMAIL_BATCH_SIZE: "10"
+
+  # WhatsApp/Twilio Settings
+  WHATSAPP_ENABLED: "true"
+  TWILIO_ENDPOINT: "https://api.twilio.com"
+  TWILIO_API_VERSION: "2010-04-01"
+
+  # Message Processor Settings
+  PROCESSOR_ENABLE_METRICS: "true"
+  PROCESSOR_METRICS_INTERVAL: "60"
+  PROCESSOR_TIMEOUT_SECONDS: "300"
+  PROCESSOR_MAX_RETRIES: "3"
+  PROCESSOR_BACKOFF_FACTOR: "2"
+
+  # Health Check Settings
+  HEALTH_CHECK_KAFKA_TIMEOUT: "5"
+  HEALTH_CHECK_DB_TIMEOUT: "10"
+  HEALTH_CHECK_AGENT_TIMEOUT: "15"
+
+  # Customer Cache Settings
+  CUSTOMER_CACHE_TTL: "3600"
+  CUSTOMER_CACHE_MAX_SIZE: "1000"
+
+  # Metrics & Monitoring
+  METRICS_ENABLED: "true"
+  METRICS_PORT: "9090"
+  PROMETHEUS_ENABLED: "true"
+
+  # Logging
+  LOG_FORMAT: "json"
+  LOG_RETENTION_DAYS: "30"
+
+  # API CORS Settings
+  CORS_ORIGINS: "https://cloudflow.example.com,https://api.cloudflow.example.com"
+  CORS_ALLOW_CREDENTIALS: "true"
+  CORS_ALLOW_METHODS: "GET,POST,PUT,DELETE,OPTIONS"
+  CORS_ALLOW_HEADERS: "Content-Type,Authorization,X-Twilio-Signature"
+
+  # Deployment Info
+  DEPLOYMENT_REGION: "us-east-1"
+  DEPLOYMENT_CLUSTER: "fte-production"
+  DEPLOYMENT_TIER: "gold"

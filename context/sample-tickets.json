@@ -1,0 +1,395 @@
+{
+  "tickets": [
+    {
+      "id": "EMAIL-001",
+      "channel": "email",
+      "timestamp": "2025-03-30T14:23:00Z",
+      "from": "sarah@acmecorp.com",
+      "subject": "How do I set up task dependencies?",
+      "body": "Hi ProjectFlow,\n\nWe're managing 50 tasks across 3 teams and need our design phase to finish before dev starts. Can you walk me through setting up task dependencies?\n\nThanks,\nSarah",
+      "sentiment": "neutral_helpful",
+      "priority": "medium",
+      "category": "how-to"
+    },
+    {
+      "id": "WHATSAPP-001",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T22:45:00Z",
+      "from": "+1-555-0101",
+      "body": "team can't see google drive files i attached 😞 client presentation TOMORROW",
+      "sentiment": "panicked",
+      "priority": "critical",
+      "category": "troubleshooting",
+      "followup_messages": [
+        {"timestamp": "2025-03-30T22:46:00Z", "body": "URGENT - need this ASAP"},
+        {"timestamp": "2025-03-30T22:50:00Z", "body": "is anyone online??"}
+      ]
+    },
+    {
+      "id": "WEB-FORM-001",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T16:30:00Z",
+      "form_data": {
+        "name": "Marcus Johnson",
+        "email": "marcus@techlab.com",
+        "subject": "Pricing for 50-person team",
+        "category": "billing",
+        "message": "Is $50/month per workspace or per person? We have 3 workspaces. What's total cost? Any annual discounts?"
+      },
+      "sentiment": "neutral_business",
+      "priority": "medium"
+    },
+    {
+      "id": "EMAIL-002",
+      "channel": "email",
+      "timestamp": "2025-03-29T19:22:00Z",
+      "from": "aisha@nonprofit.org",
+      "subject": "URGENT: Slack integration broken - deadline tomorrow",
+      "body": "Our Slack integration stopped working 2 hours ago. Error: 'Unauthorized: Invalid API token'. I tried reinstalling and clearing cache. We're in the middle of a critical sprint. ASAP help needed.\n\nAisha",
+      "sentiment": "angry_urgent",
+      "priority": "critical",
+      "category": "troubleshooting"
+    },
+    {
+      "id": "WHATSAPP-002",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T17:30:00Z",
+      "from": "+1-555-0202",
+      "body": "HELP!! boss wants project status report in 10 mins, where's the reports section??",
+      "sentiment": "panicked",
+      "priority": "critical",
+      "category": "how-to"
+    },
+    {
+      "id": "WEB-FORM-002",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T14:15:00Z",
+      "form_data": {
+        "name": "Rachel Pierce",
+        "email": "rachel@freelancers.com",
+        "subject": "Accidentally deleted critical project",
+        "category": "data_recovery",
+        "message": "Deleted project 'ClientX_Q1_Campaign' 2 months ago. It had all client deliverables. Can it be recovered?"
+      },
+      "sentiment": "panicked_apologetic",
+      "priority": "critical"
+    },
+    {
+      "id": "EMAIL-003",
+      "channel": "email",
+      "timestamp": "2025-03-29T23:10:00Z",
+      "from": "kevin@largeenterprise.com",
+      "subject": "Data corruption - requesting refund",
+      "body": "Unacceptable! Our project database corrupted last week, lost 6 weeks of work. Told data only backs up 30 days? We're switching to Asana. Want full refund for unused portion. Posting reviews about this disaster.\n\nKevin",
+      "sentiment": "very_angry_escalated",
+      "priority": "critical",
+      "category": "escalation"
+    },
+    {
+      "id": "WHATSAPP-003",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T15:00:00Z",
+      "from": "+1-555-0303",
+      "body": "why does my task keep going back to 'open' after i mark done? happened 5 times 😤",
+      "sentiment": "frustrated",
+      "priority": "high",
+      "category": "troubleshooting"
+    },
+    {
+      "id": "WEB-FORM-003",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T10:20:00Z",
+      "form_data": {
+        "name": "Priya Desai",
+        "email": "priya@designagency.io",
+        "subject": "Guest access permissions",
+        "category": "permissions",
+        "message": "Need to give freelancers access to specific projects without full workspace membership. What can guests do/not do?"
+      },
+      "sentiment": "neutral_exploratory",
+      "priority": "medium"
+    },
+    {
+      "id": "EMAIL-004",
+      "channel": "email",
+      "timestamp": "2025-03-30T03:30:00Z",
+      "from": "lisa@nonprofit.org",
+      "subject": "API rate limit blocking automation",
+      "body": "Building custom dashboard with API. Hitting 1000/hr rate limit, blocking automated reporting. Can we increase this? We're Non-profit on Pro plan.\n\nLisa",
+      "sentiment": "neutral_technical",
+      "priority": "high",
+      "category": "technical"
+    },
+    {
+      "id": "WHATSAPP-004",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T09:15:00Z",
+      "from": "+1-555-0404",
+      "body": "is mobile app available yet? need to update tasks on the go",
+      "sentiment": "curious",
+      "priority": "low",
+      "category": "feature-inquiry"
+    },
+    {
+      "id": "WEB-FORM-004",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T12:00:00Z",
+      "form_data": {
+        "name": "Emily Chen",
+        "email": "emily@creativestudio.co",
+        "subject": "Custom fields support?",
+        "category": "feature_request",
+        "message": "Need custom fields: Client Name, Budget, Deliverables. Supported? Workarounds?"
+      },
+      "sentiment": "neutral_exploratory",
+      "priority": "medium"
+    },
+    {
+      "id": "EMAIL-005",
+      "channel": "email",
+      "timestamp": "2025-03-30T06:45:00Z",
+      "from": "david@consultancy.com",
+      "subject": "Enterprise: how to setup SSO?",
+      "body": "Upgraded to Enterprise, should have SSO (SAML 2.0). Can't find settings. Our IT team ready to integrate Okta. What's next step?\n\nDavid",
+      "sentiment": "neutral_business",
+      "priority": "high",
+      "category": "enterprise"
+    },
+    {
+      "id": "WHATSAPP-005",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T20:30:00Z",
+      "from": "+1-555-0505",
+      "body": "bulk import tasks from spreadsheet? have 200 tasks to add 😅",
+      "sentiment": "curious_efficient",
+      "priority": "low",
+      "category": "feature-inquiry"
+    },
+    {
+      "id": "WEB-FORM-005",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T13:00:00Z",
+      "form_data": {
+        "name": "James Wong",
+        "email": "james@agencyplus.co",
+        "subject": "Change billing to annual + add seats",
+        "category": "billing",
+        "message": "Want to switch monthly → annual for better rate. Also add 10 more seats. How do I do this?"
+      },
+      "sentiment": "neutral_business",
+      "priority": "medium"
+    },
+    {
+      "id": "EMAIL-006",
+      "channel": "email",
+      "timestamp": "2025-03-30T05:15:00Z",
+      "from": "angela@manufacturing.com",
+      "subject": "ERP integration - SAP/NetSuite compatibility",
+      "body": "Need to know:\n1. Pre-built integrations with SAP, NetSuite, JD Edwards?\n2. Can API do bi-directional task syncing?\n3. What level of technical support for custom integration?\n\nOur IT team needs enterprise-level support.\n\nAngela",
+      "sentiment": "neutral_business",
+      "priority": "high",
+      "category": "enterprise"
+    },
+    {
+      "id": "WHATSAPP-006",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T11:45:00Z",
+      "from": "+1-555-0606",
+      "body": "can i use projectflow for personal to-do lists or team only?",
+      "sentiment": "curious_friendly",
+      "priority": "low",
+      "category": "feature-inquiry"
+    },
+    {
+      "id": "WEB-FORM-006",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T08:45:00Z",
+      "form_data": {
+        "name": "Tom Rodriguez",
+        "email": "tom@medtech.io",
+        "subject": "HIPAA compliance & BAA",
+        "category": "compliance",
+        "message": "Healthcare/medtech company. Is ProjectFlow HIPAA certified? Do you sign BAAs (Business Associate Agreements)? Legal team needs this."
+      },
+      "sentiment": "neutral_business_formal",
+      "priority": "high",
+      "category": "escalation"
+    },
+    {
+      "id": "EMAIL-007",
+      "channel": "email",
+      "timestamp": "2025-03-30T02:00:00Z",
+      "from": "support@partner-agency.com",
+      "subject": "Partnership/reseller opportunity",
+      "body": "We're digital agency with 500+ clients. Interested in white-label or reseller partnership. Open to discussing?\n\nPlease connect with partnerships/BD team.\n\nThanks",
+      "sentiment": "neutral_business",
+      "priority": "low",
+      "category": "escalation"
+    },
+    {
+      "id": "WHATSAPP-007",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T18:45:00Z",
+      "from": "+1-555-0707",
+      "body": "website is down? can't log in 😢",
+      "sentiment": "concerned",
+      "priority": "critical",
+      "category": "outage"
+    },
+    {
+      "id": "EMAIL-008",
+      "channel": "email",
+      "timestamp": "2025-03-29T11:20:00Z",
+      "from": "ops@startup.io",
+      "subject": "How to bulk export all project data?",
+      "body": "Hi,\n\nWe need to export all our project data in CSV format for compliance audit. I've looked through Settings but can't find Export option. Is this available on Pro plan or only Enterprise?\n\nOps Team",
+      "sentiment": "neutral_exploratory",
+      "priority": "medium",
+      "category": "how-to"
+    },
+    {
+      "id": "WHATSAPP-008",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T14:15:00Z",
+      "from": "+1-555-0808",
+      "body": "integration with zapier - does it work with all triggers or just some?",
+      "sentiment": "curious",
+      "priority": "medium",
+      "category": "integration"
+    },
+    {
+      "id": "WEB-FORM-007",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T09:30:00Z",
+      "form_data": {
+        "name": "Sarah Martinez",
+        "email": "sarah@nonprofit.com",
+        "subject": "Are you a nonprofit-friendly company?",
+        "category": "general",
+        "message": "We're a non-profit working on education. Do you offer discounts or free accounts for non-profits? What's your policy?"
+      },
+      "sentiment": "neutral_exploratory",
+      "priority": "low",
+      "category": "sales"
+    },
+    {
+      "id": "EMAIL-009",
+      "channel": "email",
+      "timestamp": "2025-03-30T22:10:00Z",
+      "from": "admin@largecompany.com",
+      "subject": "Webhook security - how do you sign requests?",
+      "body": "Hi,\n\nFor security, we need to verify webhook requests are actually from ProjectFlow. Do you sign webhooks with HMAC or similar? Documentation didn't have details on this.\n\nAdmin Team",
+      "sentiment": "neutral_technical",
+      "priority": "high",
+      "category": "security"
+    },
+    {
+      "id": "WHATSAPP-009",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-31T01:45:00Z",
+      "from": "+1-555-0909",
+      "body": "i'm in timezone GMT+5:30 and getting emails at weird times - is there a timezone setting?",
+      "sentiment": "confused",
+      "priority": "medium",
+      "category": "account-settings"
+    },
+    {
+      "id": "WEB-FORM-008",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T15:50:00Z",
+      "form_data": {
+        "name": "Dev Lead",
+        "email": "dev@company.io",
+        "subject": "Webhook response timeout setting",
+        "category": "technical",
+        "message": "Our webhook endpoint is processing async in background. Can we increase the 30s timeout? What happens if we exceed it?"
+      },
+      "sentiment": "neutral_technical",
+      "priority": "medium",
+      "category": "technical"
+    },
+    {
+      "id": "EMAIL-010",
+      "channel": "email",
+      "timestamp": "2025-03-29T07:30:00Z",
+      "from": "compliance@company.com",
+      "subject": "GDPR data deletion request",
+      "body": "Hi,\n\nPer GDPR, we have a customer requesting deletion of all personal data from our ProjectFlow workspace. How do we process this? What's the timeline? Do we need a data processing agreement?\n\nCompliance",
+      "sentiment": "neutral_business",
+      "priority": "critical",
+      "category": "escalation"
+    },
+    {
+      "id": "WHATSAPP-010",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-30T13:25:00Z",
+      "from": "+1-555-1010",
+      "body": "trying to use projectflow offline - can i work without internet?",
+      "sentiment": "curious",
+      "priority": "low",
+      "category": "feature-inquiry"
+    },
+    {
+      "id": "WEB-FORM-009",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T11:15:00Z",
+      "form_data": {
+        "name": "Jordan Lee",
+        "email": "jordan@startup.co",
+        "subject": "Can I make projects private/public?",
+        "category": "permissions",
+        "message": "Some projects we want only team to see, some we want to share with clients. Can we control visibility? How does this work with guest access?"
+      },
+      "sentiment": "neutral_exploratory",
+      "priority": "medium",
+      "category": "permissions"
+    },
+    {
+      "id": "EMAIL-011",
+      "channel": "email",
+      "timestamp": "2025-03-30T20:50:00Z",
+      "from": "analyst@company.com",
+      "subject": "Can we access ProjectFlow data via SQL/direct database?",
+      "body": "We have custom analytics team that wants direct database access to run ad-hoc queries on our ProjectFlow data. Is this possible? What would it look like?\n\nAnalytics",
+      "sentiment": "neutral_technical",
+      "priority": "medium",
+      "category": "technical"
+    },
+    {
+      "id": "WHATSAPP-011",
+      "channel": "whatsapp",
+      "timestamp": "2025-03-31T03:20:00Z",
+      "from": "+1-555-1111",
+      "body": "we're thinking about switching from asana. what makes projectflow different? worth the migration effort?",
+      "sentiment": "neutral_exploratory",
+      "priority": "low",
+      "category": "sales"
+    },
+    {
+      "id": "WEB-FORM-010",
+      "channel": "web_form",
+      "timestamp": "2025-03-30T12:45:00Z",
+      "form_data": {
+        "name": "IT Manager",
+        "email": "it@company.com",
+        "subject": "Can ProjectFlow run on our private cloud/self-hosted?",
+        "category": "deployment",
+        "message": "Due to data residency requirements, we can only use self-hosted or private cloud. Is ProjectFlow available as self-hosted? What's the cost/licensing model?"
+      },
+      "sentiment": "neutral_business",
+      "priority": "high",
+      "category": "enterprise"
+    },
+    {
+      "id": "EMAIL-012",
+      "channel": "email",
+      "timestamp": "2025-03-30T04:15:00Z",
+      "from": "user@smallcompany.com",
+      "subject": "Free plan - am I locked out if I exceed limits?",
+      "body": "Hi,\n\nI'm on the free plan with 5 team members. What happens if we hire 1 more person and hit the limit? Do we get locked out immediately or do we have time to upgrade?\n\nThanks",
+      "sentiment": "neutral_exploratory",
+      "priority": "low",
+      "category": "billing"
+    }
+  ]
+}
