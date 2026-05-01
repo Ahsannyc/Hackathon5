@@ -85,7 +85,16 @@
       "Bash(mkdir -p /tmp/Hackathon5-clean/history/prompts/general)",
       "Bash(cp \"C:\\\\Users\\\\14loa\\\\Desktop\\\\IT\\\\GIAIC\\\\Q4 spec kit\\\\Hackathon5\\\\GMAIL_SETUP_DETAILED.md\" /tmp/Hackathon5-clean/)",
       "Bash(git commit *)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(grep -v \"^$\")",
+      "Bash(python -m pytest production/tests/ -v)",
+      "Bash(python -m pytest production/tests/test_multi_channel.py::test_web_form_integration -v)",
+      "Bash(python -c \"from production.api.main import app; print\\('✅ App imports successfully'\\)\")",
+      "Bash(python -c \"import twilio; print\\('✅ Twilio installed'\\)\")",
+      "Bash(python -c \"import twilio, cohere; print\\('✅ All critical dependencies installed'\\)\")",
+      "Bash(python -c \"import twilio, cohere; print\\('OK: All critical dependencies installed'\\)\")",
+      "Bash(python -m pytest production/tests/ -v --tb=line)",
+      "Bash(python -m pytest production/tests/test_cross_channel_continuity.py -v)"
     ]
   }
 }
